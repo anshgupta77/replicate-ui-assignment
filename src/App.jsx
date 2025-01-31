@@ -3,7 +3,7 @@ import "./App.css";
 
 const App = () => {
   const rows = 20; // Total rows
-  const cols = 15; // Total columns
+  const cols = 10; // Total columns
 
   const [waveIndex, setWaveIndex] = useState(0);
 
@@ -25,11 +25,11 @@ const App = () => {
               key={colIndex}
               className={`grid-cell ${
                 colIndex === waveIndex ? "wave-red" : ""
-              } ${rowIndex === colIndex ? "strip-blue" : ""}`}
+              } ${rowIndex === colIndex || (rowIndex-10) === (10-colIndex-2) ? "strip-blue" : ""}`}
             >
               {rowIndex * cols + colIndex + 1}
             </div>
-          ))}
+          ))} 
         </div>
       ))}
     </div>

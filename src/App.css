@@ -12,7 +12,7 @@ body {
 .grid-container {
   display: grid;
   gap: 1px; /* Spacing between cells */
-  grid-template-columns: repeat(15, 40px); /* 15 columns, 40px width each */
+  grid-template-columns: repeat(10, 40px); /* 15 columns, 40px width each */
   background-color: black;
 }
 
