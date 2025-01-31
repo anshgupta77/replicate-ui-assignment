@@ -1,0 +1,55 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1px; /* Spacing between cells */
+  grid-template-columns: repeat(15, 40px); /* 15 columns, 40px width each */
+  background-color: black;
+}
+
+.grid-row {
+  display: contents;
+}
+
+.grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: 1px solid #333;
+  background-color: black;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Blue Strip */
+.strip-blue {
+  background-color: blue;
+}
+
+/* Red Wave */
+.wave-red {
+  background-color: red;
+  animation: pulse 0.5s infinite;
+}
+
+/* Optional Animation for Red Wave */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
