@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 
 const App = () => {
-  const rows = 15; // Total rows
+  const rows = 20; // Total rows
   const cols = 15; // Total columns
 
   const [waveIndex, setWaveIndex] = useState(0);
